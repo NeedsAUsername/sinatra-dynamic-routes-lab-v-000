@@ -29,9 +29,10 @@ class App < Sinatra::Base
     phrase = ""
     array.each_with_index do |word, index|
       if index == array.size - 1
-        phrase 
-      phrase += "#{word} "
-
+        phrase += "#{word}."
+      else
+        phrase += "#{word} "
+      end 
     end
     phrase += "."
     phrase
