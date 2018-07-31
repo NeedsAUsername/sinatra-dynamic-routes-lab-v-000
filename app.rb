@@ -27,8 +27,10 @@ class App < Sinatra::Base
     array = [params[:word1], params[:word2], params[:word3], params[:word4], params[:word5]]
 
     phrase = ""
-    array.each do |word|
+    array.each_with_ do |word|
+      if wor
       phrase += "#{word} "
+
     end
     phrase += "."
     phrase
