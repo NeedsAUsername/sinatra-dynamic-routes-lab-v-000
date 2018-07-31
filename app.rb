@@ -23,7 +23,14 @@ class App < Sinatra::Base
     end
   end
 
-  get 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    array = [params[:word1], params[:word2], params[:word3], params[:word4], params[:word5]]
+
+    phrase = ""
+    array.each do |word|
+      phrase += "#{word} "
+    end
+  end
 
 
 end
