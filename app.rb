@@ -5,12 +5,12 @@ class App < Sinatra::Base
 
   get '/reversename/:name' do
     @name = params[:name]
-    "#{name.reverse}"
+    "#{@name.reverse}"
   end
 
   get '/square/:number' do
     @number = params[:number].to_i
-    "#{number ** 2}"
+    "#{@number ** 2}"
   end
 
   get '/say/:number/:phrase' do
@@ -20,6 +20,6 @@ class App < Sinatra::Base
     @number.times do
       "#{@phrase}"
     end
-  end 
+  end
 
 end
