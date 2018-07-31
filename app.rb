@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
 
-    
+    array = Array.new(@number, )
   end
 
 
