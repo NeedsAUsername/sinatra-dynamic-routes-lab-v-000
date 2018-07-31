@@ -31,7 +31,7 @@ class App < Sinatra::Base
       phrase += "#{word} "
     end
 
-    phrase = "."
+    phrase += "."
   end
 
   get '/:operation/:number1/:number2' do
