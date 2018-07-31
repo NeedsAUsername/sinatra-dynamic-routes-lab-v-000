@@ -30,6 +30,8 @@ class App < Sinatra::Base
     array.each do |word|
       phrase += "#{word} "
     end
+
+    phrase
   end
 
 
