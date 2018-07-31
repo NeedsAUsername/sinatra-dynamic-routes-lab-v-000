@@ -18,7 +18,9 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
 
     array = Array.new(@number, @phrase)
-    
+    array.collect do |phrase|
+      phrase
+    end 
   end
 
 
