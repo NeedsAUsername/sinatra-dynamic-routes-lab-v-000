@@ -19,9 +19,11 @@ class App < Sinatra::Base
 
     array = Array.new(@number, @phrase)
     array.collect do |phrase|
-      phrase + "\n"
+      phrase + " "
     end
   end
+
+  get 
 
 
 end
